@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar Mens</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="gradient">
+      <div class="wrapper">
+        <!-- Card for Calendar -->
+        <div class="card calendar-card">
+          <div class="calendar-header">
+            <button onclick="prevMonth()">&#10094;</button>
+            <h2 id="monthYear"></h2>
+            <button onclick="nextMonth()">&#10095;</button>
+            
+          </div>
+          <div class="calendar" id="calendar"></div>
+        </div>
+
+        <!-- Card for Cycle Information -->
+        <div class="card info-box">
+          <h3>Menstrual Cycle Information</h3>
+          
+          <div class="card">
+            <p>
+              <strong>Cycle Length</strong>
+            </p>
+            <p>
+              <span id="cycleLength">0</span> days
+            </p>
+          </div>
+        
+          <div class="card">
+            <p>
+              <strong>Cycle Category</strong>
+            </p>
+            <p>
+              <span id="cycleCategory">Unknown</span>
+            </p>
+          </div>
+          
+        </div>
+        
+        
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="script.js"></script>
+     
+  </body>
+</html>
